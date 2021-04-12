@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="databaseModelStoreContainer" CdmEntityContainer="databaseEntities">
+    <EntitySetMapping Name="Branches">
+      <EntityTypeMapping TypeName="databaseModel.Branch">
+        <MappingFragment StoreEntitySet="Branch">
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_delete_branch" FunctionName="databaseModel.Store.sp_delete_branch" />
+    <FunctionImportMapping FunctionImportName="sp_find_branch" FunctionName="databaseModel.Store.sp_find_branch">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="databaseModel.sp_find_branch_Result">
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_insert_branch" FunctionName="databaseModel.Store.sp_insert_branch" />
+    <FunctionImportMapping FunctionImportName="sp_select_branch" FunctionName="databaseModel.Store.sp_select_branch">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="databaseModel.sp_select_branch_Result">
+          <ScalarProperty Name="BranchId" ColumnName="BranchId" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_update_branch" FunctionName="databaseModel.Store.sp_update_branch" />
+  </EntityContainerMapping>
+</Mapping>
