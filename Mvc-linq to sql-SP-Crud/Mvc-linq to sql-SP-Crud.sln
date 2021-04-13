@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc-linq to sql-SP-Crud", "Mvc-linq to sql-SP-Crud\Mvc-linq to sql-SP-Crud.csproj", "{866823DF-C97C-4233-B65F-F72180C31EDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{866823DF-C97C-4233-B65F-F72180C31EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{866823DF-C97C-4233-B65F-F72180C31EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{866823DF-C97C-4233-B65F-F72180C31EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{866823DF-C97C-4233-B65F-F72180C31EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {741EA7E3-29AD-44AB-9E61-7EB7EBC054D9}
+	EndGlobalSection
+EndGlobal

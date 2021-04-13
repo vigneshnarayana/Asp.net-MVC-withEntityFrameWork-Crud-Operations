@@ -1,0 +1,31 @@
+
+ALTER procedure [dbo].[crudeemp]
+@Id int=null,
+@Empname nvarchar(150)=null,
+@Email nvarchar(150)=null,
+@Salary nvarchar(150)=null ,
+@CrudOption nvarchar(50)=null
+as
+begin
+  if(@CrudOption='select')
+  begin
+  select * from Emptable
+  end
+  if(@CrudOption='details')
+  begin
+  select * from Emptable where Empid=@Id
+  end
+  if(@CrudOption='insert')
+  begin
+  insert into Emptable(Empname,Email,Salary) values(@Empname,@Email,@Salary)
+  end
+  if(@CrudOption='update')
+  begin
+  update Emptable set Empname=@Email, Email=@Email, Salary=@Salary where Empid=@Id
+  end
+  if(@CrudOption='delete')
+  begin
+  Delete  from Emptable where Empid=@Id
+  end
+
+end
